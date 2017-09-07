@@ -1,0 +1,107 @@
+/*Color Paletter
+#22333B - Bluish Gray
+#F0D797 - Goldish Yellow
+#8D99AE - light blue
+#EDF2F4 -Blue/White
+*/
+
+/*Global styles
+--------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a{
+  color: #F0D797;
+}
+a:hover{
+  text-decoration: none;
+}
+
+h1,h2{
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h2{
+  font-size: 40px;
+  margin-top: 0;
+}
+h1{
+  font-size: 80px;
+}
+.content-wrap{
+  max-width: 950px; /*If width doesn't exceed 950 then the text need to fit in 100% of image*/
+  margin: 0 auto;
+  padding:50px;
+  overflow: auto;
+}
+.col-narrow{
+  width: 30%;
+  float:left;
+  min-height: 175px
+  
+}
+.col-wide{
+  width: 70%;
+  float:left;
+  padding-left: 20px;
+  min-height: 175px
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/* Header and Footer
+--------------------------*/
+header, footer{
+  background-color: #22333b;
+  color: #8D99AE;
+}
+.profile-img{
+ 
+  border-radius: 50%;
+ 
+
+}
+
+/*Header*/
+header h1, header h2{
+  color: #EDF2F4;
+  margin:0;
+}
+
+
+/*Footer*/
+footer {
+  text-align: center;
+}
+.contact-info a{
+  padding: 10px;
+  display: inline-block;
+  
+  
+
+}
+
+/* Work Experience
+--------------------------*/
+.work{
+  background: #EDF2F4;
+}
+.education{
+  background: #F0D797;
+}
+
+
+
+
+
+/* Education
+--------------------------*/
+
+
