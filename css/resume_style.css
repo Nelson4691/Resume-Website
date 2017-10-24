@@ -32,28 +32,42 @@ h2{
 h1{
   font-size: 80px;
 }
+h3{
+  margin:0;
+}
 .content-wrap{
   max-width: 950px; /*If width doesn't exceed 950 then the text need to fit in 100% of image*/
   margin: 0 auto;
-  padding:50px;
+  padding:60px 50px;
   overflow: auto;
 }
 .col-narrow{
   width: 30%;
   float:left;
-  min-height: 175px
+  
   
 }
 .col-wide{
   width: 70%;
   float:left;
   padding-left: 20px;
-  min-height: 175px
 }
 
 body{
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.btn{
+  text-decoration: none;
+  background-color: #F0D797;
+  color: #22333B;
+  display: inline-block;
+  padding: 4px;
 }
 
 /* Header and Footer
@@ -63,10 +77,7 @@ header, footer{
   color: #8D99AE;
 }
 .profile-img{
- 
   border-radius: 50%;
- 
-
 }
 
 /*Header*/
@@ -75,6 +86,15 @@ header h1, header h2{
   margin:0;
 }
 
+header{
+  position: relative;
+}
+
+.download{
+  position: absolute;
+  bottom: 0;
+  right 0;
+}
 
 /*Footer*/
 footer {
@@ -88,20 +108,50 @@ footer {
 
 }
 
+/* Navigation
+--------------------------*/
+
+nav{
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  top:0;
+  width:100%;
+  
+  
+}
+nav a{
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /* Work Experience
 --------------------------*/
 .work{
   background: #EDF2F4;
+  
 }
 .education{
   background: #F0D797;
 }
-
-
-
+h3 ~ P{
+  margin:0;
+}
+.job-description{
+   margin-bottom: 25px
+}
+.job-description p:first-of-type{
+  margin: 0;
+}
 
 
 /* Education
 --------------------------*/
-
+p+h3{
+  margin-top: 30px;
+  
+}
 
