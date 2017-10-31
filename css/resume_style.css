@@ -41,17 +41,7 @@ h3{
   padding:60px 50px;
   overflow: auto;
 }
-.col-narrow{
-  width: 30%;
-  float:left;
-  
-  
-}
-.col-wide{
-  width: 70%;
-  float:left;
-  padding-left: 20px;
-}
+
 
 body{
   font-family: 'Open Sans', sans-serif;
@@ -93,7 +83,7 @@ header{
 .download{
   position: absolute;
   bottom: 0;
-  right 0;
+  right: 0;
 }
 
 /*Footer*/
@@ -131,7 +121,9 @@ nav a{
 /* Work Experience
 --------------------------*/
 .work{
-  background: #EDF2F4;
+  background: linear-gradient(rgba(237,242,244,0.99), rgba(237,242,244,0.9)),
+              url(../_images/code.jpg) no-repeat fixed;
+  background-size: cover;
   
 }
 .education{
@@ -155,3 +147,26 @@ p+h3{
   
 }
 
+/* Media Queries 
+--------------------------*/
+@media (min-width:720px){
+  .col-narrow{
+  width: 30%;
+  float:left;  
+}
+.col-wide{
+  width: 70%;
+  float:left;
+  padding-left: 20px;
+  } 
+}
+
+@media (max-width:719px){
+  header{
+    text-align: center;
+  }
+  
+  .job-description{
+    margin-top: 20px;
+  }
+}
